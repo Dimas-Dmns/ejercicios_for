@@ -5,14 +5,15 @@ function listarNumeros(){
 }
 
 function ejecutar(numeroEjercicio){
- if(numeroEjercicio==1){
-listarNumeros()
- } else if (numeroEjercicio==2){
-    listarNumerosReversa();
- } else if (numeroEjercicio==3){
-    listarPares();
- } else if (numeroEjercicio==4){
-    listarImpares();
+ switch (numeroEjercicio){
+    case 1 : listarNumeros();
+    break;
+    case 2 : listarNumerosReversa();
+    break;
+    case 3 : listarImpares();
+    break;
+    case 4 : listarPares();
+    break;
  }
 }
 
