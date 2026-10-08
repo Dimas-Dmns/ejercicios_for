@@ -1,7 +1,11 @@
 
 function generarTablas() {
 
-    let contenedor = document.getElementById("contenedorTabla");
+    let contenedor =
+        document.getElementById("contenedorTabla");
+
+    let numero =
+        document.getElementById("txtNumero").value;
 
     let contenido = "";
 
@@ -9,25 +13,29 @@ function generarTablas() {
         <table>
 
             <thead>
+
                 <tr>
                     <th>OPERACIÓN</th>
                     <th>RESULTADO</th>
                 </tr>
+
             </thead>
 
             <tbody>
     `;
 
+
     for (let i = 1; i <= 10; i++) {
 
         contenido += `
             <tr>
-                <td>5 × ${i}</td>
-                <td>${5 * i}</td>
+                <td>${numero} × ${i}</td>
+                <td>${numero * i}</td>
             </tr>
         `;
 
     }
+
 
     contenido += `
             </tbody>
@@ -35,7 +43,7 @@ function generarTablas() {
         </table>
     `;
 
+
     contenedor.innerHTML = contenido;
 
 }
-
