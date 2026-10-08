@@ -478,6 +478,66 @@ tbody tr:hover td:first-child {
 
 
 /* =========================================
+   ENTRADA DE TABLA
+========================================= */
+
+.entrada-tabla {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+.entrada-tabla label {
+    color: #F5F7FA;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+.entrada-tabla input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #222B36;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background-color: #0B0F14;
+
+    color: #F5F7FA;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.entrada-tabla input::placeholder {
+    color: #F5F7FA;
+
+    opacity: 0.35;
+}
+
+.entrada-tabla input:focus {
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 175, 55, 0.10);
+}
+
+
+/* =========================================
    FOOTER RESPONSIVE
 ========================================= */
 

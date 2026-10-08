@@ -3,14 +3,20 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Tabla del 3</title>
 
     <link rel="stylesheet" href="multiplicar.css">
 
     <script src="multiplicar.js" defer></script>
+
 </head>
 
 <body>
@@ -22,38 +28,77 @@
             <header class="encabezado">
 
                 <div class="marca">
-                    <span class="marca-icono">3</span>
+
+                    <span class="marca-icono">
+                        3
+                    </span>
 
                     <div>
-                        <p class="marca-superior">OPERACIONES</p>
-                        <h1>Tabla del 3</h1>
+
+                        <p class="marca-superior">
+                            OPERACIONES
+                        </p>
+
+                        <h1>
+                            Tabla de multiplicar
+                        </h1>
+
                     </div>
+
                 </div>
 
-                <button class="boton-probar" onclick="generarTablas()">
+                <button
+                    class="boton-probar"
+                    onclick="generarTablas()"
+                >
                     PROBAR
                 </button>
 
             </header>
 
+
             <div class="separador"></div>
 
-            <div class="descripcion">
-                <p>
-                    Resultados de la tabla de multiplicar
-                </p>
+
+            <div class="entrada-tabla">
+
+                <label for="txtNumero">
+                    Número de la tabla
+                </label>
+
+                <input
+                    type="number"
+                    id="txtNumero"
+                    placeholder="Ejemplo: 8"
+                >
+
             </div>
 
-            <!-- CONTENEDOR DE LA TABLA -->
-            <div id="contenedorTabla" class="tabla-contenedor">
+
+            <div class="descripcion">
+
+                <p>
+                    Ingresa un número para generar
+                    su tabla de multiplicar.
+                </p>
+
+            </div>
+
+
+            <div
+                id="contenedorTabla"
+                class="tabla-contenedor"
+            >
 
                 <table>
 
                     <thead>
+
                         <tr>
                             <th>OPERACIÓN</th>
                             <th>RESULTADO</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
@@ -114,12 +159,21 @@
 
             </div>
 
+
             <footer class="pie">
 
                 <span>Dimas Vera</span>
-                <span class="separador-footer">•</span>
+
+                <span class="separador-footer">
+                    •
+                </span>
+
                 <span>2026</span>
-                <span class="separador-footer">•</span>
+
+                <span class="separador-footer">
+                    •
+                </span>
+
                 <span>KrakeDEV</span>
 
             </footer>
