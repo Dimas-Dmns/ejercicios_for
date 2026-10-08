@@ -1,3 +1,6 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -7,121 +10,485 @@ body {
     margin: 0;
     min-height: 100vh;
 
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #f2f2f2;
-    color: #222;
+    background-color: #0B0F14;
+    color: #F5F7FA;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
+    padding: 30px;
 }
 
-/* Contenedor principal */
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+========================================= */
+
 .contenedor {
     width: 100%;
-    max-width: 600px;
+    max-width: 850px;
 
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 15px;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-
-    text-align: center;
+    animation: aparecer 0.8s ease;
 }
 
-/* Botón */
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.tarjeta {
+    background-color: #151B23;
+
+    border: 1px solid #222B36;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   MARCA
+========================================= */
+
+.marca {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.marca-icono {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: #D4AF37;
+
+    color: #0B0F14;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.15);
+
+    animation: pulso 3s infinite;
+}
+
+
+.marca-superior {
+    margin: 0 0 4px;
+
+    color: #D4AF37;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
 .boton-probar {
-    width: 100%;
+    padding: 12px 24px;
 
-    padding: 12px;
+    border: 1px solid #D4AF37;
 
-    border: none;
     border-radius: 8px;
 
-    background-color: #222;
-    color: white;
+    background-color: transparent;
 
-    font-size: 18px;
+    color: #D4AF37;
+
+    font-size: 13px;
     font-weight: bold;
+
+    letter-spacing: 1px;
 
     cursor: pointer;
 
-    margin-bottom: 20px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
 }
 
 .boton-probar:hover {
-    background-color: #444;
+    background-color: #D4AF37;
+
+    color: #0B0F14;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.2);
 }
 
-/* Título */
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    font-size: 32px;
+.boton-probar:active {
+    transform: translateY(0);
 }
 
-/* Tabla */
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.separador {
+    height: 1px;
+
+    margin: 28px 0 20px;
+
+    background-color: #222B36;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.descripcion p {
+    margin: 0 0 18px;
+
+    color: #F5F7FA;
+
+    font-size: 14px;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   TABLA
+========================================= */
+
+.tabla-contenedor {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #222B36;
+
+    border-radius: 12px;
+}
+
 table {
     width: 100%;
 
     border-collapse: collapse;
 
-    font-size: 18px;
+    min-width: 450px;
 }
 
-th,
-td {
-    padding: 12px;
 
-    border: 1px solid #ccc;
+/* Cabecera */
+
+thead {
+    background-color: #222B36;
 }
 
 th {
-    background-color: #222;
-    color: white;
+    padding: 16px 20px;
+
+    color: #D4AF37;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    text-align: left;
 }
+
+
+/* Celdas */
 
 td {
-    background-color: #fafafa;
+    padding: 15px 20px;
+
+    border-top: 1px solid #222B36;
+
+    color: #F5F7FA;
+
+    font-size: 15px;
+
+    transition:
+        background-color 0.25s ease,
+        padding-left 0.25s ease;
 }
 
-tr:nth-child(even) td {
-    background-color: #eeeeee;
+
+/* Resultado */
+
+td:last-child {
+    color: #D4AF37;
+
+    font-weight: bold;
+
+    text-align: right;
 }
 
-/* Responsive para celulares */
-@media (max-width: 600px) {
 
-    body {
-        padding: 10px;
+/* =========================================
+   EFECTO HOVER DE FILAS
+========================================= */
+
+tbody tr {
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+tbody tr:hover {
+    background-color: #222B36;
+}
+
+tbody tr:hover td:first-child {
+    padding-left: 25px;
+}
+
+
+/* =========================================
+   PIE
+========================================= */
+
+.pie {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    color: #F5F7FA;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.5;
+}
+
+.indicador {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #D4AF37;
+
+    box-shadow:
+        0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
 
-    .contenedor {
-        padding: 20px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes pulso {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(212, 175, 55, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px rgba(212, 175, 55, 0.18);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+
+    .encabezado {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .boton-probar {
+        width: 100%;
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 25px;
     }
 
-    table {
-        font-size: 16px;
+    .tabla-contenedor {
+        border-radius: 10px;
     }
 
     th,
     td {
-        padding: 10px;
+        padding: 13px 15px;
     }
 
-    .boton-probar {
-        font-size: 16px;
+    .pie {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================================
+   PANTALLAS MUY PEQUEÑAS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .tarjeta {
+        padding: 18px;
+    }
+
+    .marca-icono {
+        width: 45px;
+        height: 45px;
+
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.pie {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #222B36;
+
+    color: #F5F7FA;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.55;
+
+    transition: opacity 0.3s ease;
+}
+
+.pie:hover {
+    opacity: 1;
+}
+
+.separador-footer {
+    color: #D4AF37;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .pie {
+        flex-wrap: wrap;
+
+        gap: 7px;
+
+        font-size: 10px;
     }
 }
 
