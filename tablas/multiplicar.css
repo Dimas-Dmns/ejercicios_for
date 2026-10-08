@@ -538,6 +538,44 @@ tbody tr:hover td:first-child {
 
 
 /* =========================================
+   MENSAJE DE VALIDACIÓN
+========================================= */
+
+#contenedorTabla h1 {
+    margin: 0;
+
+    padding: 45px 20px;
+
+    color: #D4AF37;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    animation: aparecer 0.4s ease;
+}
+
+
+/* =========================================
+   MENSAJE DE AYUDA
+========================================= */
+
+.ayuda {
+    color: #F5F7FA;
+
+    font-size: 11px;
+
+    opacity: 0.45;
+
+    line-height: 1.5;
+}
+
+
+
+
+/* =========================================
    FOOTER RESPONSIVE
 ========================================= */
 

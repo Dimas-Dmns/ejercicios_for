@@ -6,6 +6,13 @@ function generarTablas() {
 
     let numero =
         document.getElementById("txtNumero").value;
+        if (numero === "") {
+
+    contenedor.innerHTML =
+        "<h1>Ingresa un número</h1>";
+
+    return;
+}
 
     let contenido = "";
 
