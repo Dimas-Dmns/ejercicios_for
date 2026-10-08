@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,6 +9,8 @@
     <title>Tabla del 3</title>
 
     <link rel="stylesheet" href="multiplicar.css">
+
+    <script src="multiplicar.js" defer></script>
 </head>
 
 <body>
@@ -27,15 +30,13 @@
                     </div>
                 </div>
 
-                <button class="boton-probar">
+                <button class="boton-probar" onclick="generarTablas()">
                     PROBAR
                 </button>
 
             </header>
 
-
             <div class="separador"></div>
-
 
             <div class="descripcion">
                 <p>
@@ -43,8 +44,8 @@
                 </p>
             </div>
 
-
-            <div class="tabla-contenedor">
+            <!-- CONTENEDOR DE LA TABLA -->
+            <div id="contenedorTabla" class="tabla-contenedor">
 
                 <table>
 
@@ -113,28 +114,20 @@
 
             </div>
 
-
             <footer class="pie">
 
-    <span>Dimas Vera</span>
+                <span>Dimas Vera</span>
+                <span class="separador-footer">•</span>
+                <span>2026</span>
+                <span class="separador-footer">•</span>
+                <span>KrakeDEV</span>
 
-    <span class="separador-footer">•</span>
-
-    <span>2026</span>
-
-    <span class="separador-footer">•</span>
-
-    <span>KrakeDEV</span>
-
-</footer>
+            </footer>
 
         </section>
 
     </main>
 
-    
-<script src="multiplicar.js"></script>
 </body>
-
 
 </html>
